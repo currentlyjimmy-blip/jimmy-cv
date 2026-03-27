@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jimmy Zhu – CV</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2d2d2d;
+    background: #dde2e8;
+    padding: 2.5rem 1rem;
+  }
+
+  .page {
+    background: #fff;
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  /* ── Sidebar ── */
+  .sidebar {
+    background: #1e2d3d;
+    color: #c8d6e5;
+    padding: 2.4rem 1.6rem;
+  }
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 3%;
+  object-fit: cover;
+}
+
+  .sidebar .name {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.25;
+    margin-bottom: 0.2rem;
+  }
+
+  .sidebar .tagline {
+    font-size: 0.82rem;
+    color: #7fa4c2;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 2rem;
+  }
+
+  .sidebar h2 {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: #7fa4c2;
+    margin-bottom: 0.7rem;
+    margin-top: 1.8rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .sidebar h2:first-of-type { margin-top: 0; }
+
+  .sidebar ul {
+    list-style: none;
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  .sidebar ul li {
+    padding: 0.1rem 0;
+  }
+
+  .sidebar ul li strong {
+    color: #ffffff;
+    display: block;
+    font-size: 0.82rem;
+  }
+
+  .sidebar ul li span {
+    color: #93b4ce;
+    font-size: 0.8rem;
+  }
+
+  .skill-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.14);
+    color: #c8d6e5;
+    font-size: 0.78rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 3px;
+    margin: 0.18rem 0.15rem 0.18rem 0;
+  }
+
+  /* ── Main content ── */
+  .main {
+    padding: 2.4rem 2.2rem;
+  }
+
+  .main h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #1e2d3d;
+    margin-bottom: 0.15rem;
+  }
+
+  .main .subtitle {
+    font-size: 0.9rem;
+    color: #5a7a94;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.8rem;
+  }
+
+  .main h2 {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: #3a7fc1;
+    margin-top: 1.7rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid #e4edf5;
+  }
+
+  .summary p {
+    font-size: 0.92rem;
+    color: #3a4a58;
+    line-height: 1.75;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Experience */
+  .job { margin-bottom: 1.5rem; }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.1rem;
+  }
+
+  .job-title {
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: #1e2d3d;
+  }
+
+  .job-date {
+    font-size: 0.8rem;
+    color: #7a95a8;
+    white-space: nowrap;
+    margin-left: 1rem;
+  }
+
+  .job-company {
+    font-size: 0.85rem;
+    color: #3a7fc1;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+
+  .job ul {
+    padding-left: 1.1rem;
+    font-size: 0.88rem;
+    color: #3a4a58;
+    line-height: 1.7;
+  }
+
+  .job ul li { margin-bottom: 0.28rem; }
+
+  .gap-note {
+    background: #f4f8fc;
+    border-left: 3px solid #b8d0e8;
+    padding: 0.55rem 0.9rem;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .gap-note .job-header { margin-bottom: 0.05rem; }
+  .gap-note p {
+    font-size: 0.85rem;
+    color: #4a6678;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; max-width: 100%; border-radius: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ── SIDEBAR ── -->
+  <aside class="sidebar">
+    
+    <div class="avatar">
+      <img src="https://lh3.googleusercontent.com/a/ACg8ocJ-hbc80eOD3Z2nuovFhQBvcThh7aqhRGWOaxNpXvqEZsIme40=s576-c-no" alt="Jimmy Zhu">
+    </div>
+
+    <div class="name">Jimmy Zhu</div>
+
+    <div class="tagline">UX &amp; UI Designer</div>
+
+    <h2>Contact</h2>
+    <ul>
+      <li><strong>Email</strong><span>currentlyjimmy@gmail.com</span></li>
+      <li><strong>Location</strong><span>Shenzhen, China</span></li>
+      <li><strong>Nationality</strong><span>Chinese</span></li>
+    </ul>
+
+    <h2>English Proficiency</h2>
+    <ul>
+      <li><strong>IELTS — Overall 7.0</strong><span>Test date: March 2025</span></li>
+      <li><span>Listening 7.5 &nbsp;·&nbsp; Reading 7.0</span></li>
+      <li><span>Speaking 6.5 &nbsp;·&nbsp; Writing 6.0</span></li>
+      <li><span>Note: IELTS speaking score achieved after one retake (original score: 5.5)</span></li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Associate Degree</strong><span>Legal Practices · 2010–2013</span></li>
+      <li style="margin-top:0.5rem; font-size:0.8rem; color:#7fa4c2; line-height:1.5;">
+        After graduating, transitioned directly into the technology industry as a self-taught designer.
+      </li>
+    </ul>
+
+    <h2>Design Tools</h2>
+    <div>
+      <span class="skill-tag">Figma</span>
+      <span class="skill-tag">Axure</span>
+      <span class="skill-tag">Adobe XD</span>
+      <span class="skill-tag">Photoshop</span>
+      <span class="skill-tag">Illustrator</span>
+    </div>
+
+    <h2>Development</h2>
+    <div>
+      <span class="skill-tag">HTML</span>
+      <span class="skill-tag">CSS</span>
+    </div>
+
+    <h2>Other Skills</h2>
+    <div>
+      <span class="skill-tag">Brand identity</span>
+      <span class="skill-tag">Logo design</span>
+      <span class="skill-tag">UI animation</span>
+      <span class="skill-tag">User research</span>
+    </div>
+
+    <h2>Continuing Education</h2>
+    <ul>
+      <li><span>Skillshare — Brand Identity, UI Animation, Illustration (2018–2022)</span></li>
+    </ul>
+
+  </aside>
+
+  <!-- ── MAIN ── -->
+  <main class="main">
+
+    <div class="summary">
+      <h2>Professional Summary</h2>
+      <p>
+        UX and interface designer with around four years of professional experience across software products,
+        digital agencies, and independent projects. Skilled in translating product requirements into
+        intuitive user interfaces — from initial wireframes through to production-ready designs — and
+        experienced working alongside developers and product managers in cross-functional teams.
+      </p>
+      <p>
+        Career path has spanned SaaS driver software (DriverEasy), affiliate content platforms (SuperEasy),
+        client-facing digital agency work, and end-to-end ownership of a corporate website from design
+        to front-end build. Complemented by self-directed study in brand identity, UI animation, and
+        illustration, and a strong interest in how visual clarity shapes user decision-making.
+      </p>
+    </div>
+
+    <h2>Professional Experience</h2>
+
+    <!-- BenNiao -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">UX &amp; Interface Designer</span>
+        <span class="job-date">May 2022 – Jan 2025</span>
+      </div>
+      <div class="job-company">Shenzhen BenNiao Software Co., Ltd.</div>
+      <ul>
+        <li>Designed UI and UX across two main products: <em>DriverEasy</em> (a Windows desktop application for driver management, monetised via membership subscriptions) and <em>SuperEasy</em> (a content and affiliate marketing website).</li>
+        <li>Led end-to-end design and front-end build of <em>Easeware.com</em> — a corporate parent-brand website — including information architecture, visual design, HTML/CSS implementation, logo, signage, and business card collateral.</li>
+        <li>Collaborated with developers to design and ship a suite of utility micro-tools (image compressor, username search, email search) integrated into the SuperEasy blog to drive organic traffic.</li>
+        <li>Worked closely with product managers to review and optimise existing product interfaces, balancing user needs with business conversion goals.</li>
+        <li>Conducted occasional user research to inform design decisions on key product flows.</li>
+        <li>Operated within a cross-functional team of approximately 28 people.</li>
+      </ul>
+    </div>
+
+    <!-- Gap 2018–2022 -->
+    <div class="gap-note">
+      <div class="job-header">
+        <span class="job-title" style="font-size:0.9rem; color:#4a6678;">Career development period</span>
+        <span class="job-date">Oct 2018 – Apr 2022</span>
+      </div>
+      <p>
+        Dedicated this period to building English proficiency (culminating in IELTS 7.0) and deepening
+        design skills through Skillshare courses in brand identity, UI animation, and illustration.
+        Undertook occasional freelance projects including brand identity and website design for independent clients.
+        Developed a personal web project (<em>yiqiwan.today</em>) from concept to launch.
+      </p>
+    </div>
+
+    <!-- Kandao -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">UI Designer</span>
+        <span class="job-date">Sep 2018 – Oct 2018</span>
+      </div>
+      <div class="job-company">Kandao Factory (Shenzhen) Technology Co., Ltd.</div>
+      <ul>
+        <li>Short-term UI design role contributing to interface work for consumer technology products.</li>
+      </ul>
+    </div>
+
+    <!-- Freedom Internet -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">UI Designer</span>
+        <span class="job-date">Oct 2016 – Nov 2017</span>
+      </div>
+      <div class="job-company">Shenzhen Freedom Internet Co., Ltd. (Digital Agency)</div>
+      <ul>
+        <li>Designed websites and WeChat mini-apps for startup clients across a range of industries.</li>
+        <li>Notable project: designed the official website and companion app for a hardware startup that had successfully raised funds on Kickstarter, including interface design for a remotely controlled product.</li>
+        <li>Contributed to internal productivity tooling — including <em>Speedy Price</em>, a quoting tool to help project managers generate tailored client proposals faster.</li>
+      </ul>
+    </div>
+
+    <!-- Daibang -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Assistant Product Manager</span>
+        <span class="job-date">Jun 2014 – Dec 2014</span>
+      </div>
+      <div class="job-company">Shenzhen Daibang Financial Information Services Co., Ltd.</div>
+      <ul>
+        <li>Supported product development processes within a fintech information services company.</li>
+      </ul>
+    </div>
+
+    <!-- JijiaBao -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Web Content Specialist</span>
+        <span class="job-date">Oct 2013 – Jan 2014</span>
+      </div>
+      <div class="job-company">JijiaBao Technology (Shenzhen) Co., Ltd.</div>
+      <ul>
+        <li>First role after graduating; responsible for day-to-day operations and content management of a technology website.</li>
+      </ul>
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>
